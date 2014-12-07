@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RevMob"
-  s.version      = "8.0.2"
+  s.version      = "8.1.0"
   s.summary      = "Official RevMob iOS SDK."
   s.homepage     = "http://sdk.revmob.com"
   s.license      = {
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/gaoyz/revmob.git", :tag => s.version.to_s }
   s.platform     = :ios, '4.3'
   s.preserve_paths = 'RevMobAds.framework'
-  s.frameworks = 'SystemConfiguration', 'StoreKit', 'AdSupport', 'RevMobAds'
+  s.frameworks = 'SystemConfiguration', 'StoreKit', 'AdSupport', 'RevMobAds', 'MediaPlayer'
   s.weak_frameworks = 'AdSupport', 'StoreKit'
   s.requires_arc = false
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/RevMob"' }
